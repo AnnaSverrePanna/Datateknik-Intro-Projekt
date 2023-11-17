@@ -6,17 +6,101 @@
 </head>
 
 <body>
-	<div class="navbar">
-		<a href="index.html">Startsida</a>
-		<a href="subject1.html">Ämne 1</a>
-		<a href="subject2.html">Ämne 2</a>
-		<a href="subject3.html">Ämne 3</a>
-		<a href="subject4.html">Ämne 4</a>
-		<a href="quiz.html">Quiz</a>
+	<div class="page-container">
+		<div class="navbar">
+			<a href="index.html">Startsida</a>
+			<a href="subject1.html">Ämne 1</a>
+			<a href="subject2.html">Ämne 2</a>
+			<a href="subject3.html">Ämne 3</a>
+			<a href="subject4.html">Ämne 4</a>
+			<a href="quiz.html">Quiz</a>
+		</div>
+
+		<div class="content">
+			<h1>Quiz</h1>
+
+			<div class="questions-container">
+				<!-- Fråga 1 -->
+				<div class="question">
+					<p>Fråga 1: Vad är sveriges huvudstad?</p>
+					<label><input type="radio" name="q1" value="TRUE"> Stockholm</label>
+					<label><input type="radio" name="q1"> Oslo</label>
+					<label><input type="radio" name="q1"> Copenhagen</label>
+					<label><input type="radio" name="q1"> Helsinki</label>
+				</div>
+
+				<!-- Fråga 2 -->
+				<div class="question">
+					<p>Fråga 2: Vilken planet är känd som den röda planeten?</p>
+					<label><input type="radio" name="q2"> Venus</label>
+					<label><input type="radio" name="q2" value="TRUE"> Mars</label>
+					<label><input type="radio" name="q2"> Jupiter</label>
+					<label><input type="radio" name="q2"> Saturnus</label>
+				</div>
+
+				<!-- Fråga 3 -->
+				<div class="question">
+					<p>Fråga 3: Vem skrev "Romeo och Julia"?</p>
+					<label><input type="radio" name="q3"> Jane Austen</label>
+					<label><input type="radio" name="q3"> Charles Dickens</label>
+					<label><input type="radio" name="q3" value="TRUE"> William Shakespeare</label>
+					<label><input type="radio" name="q3"> Mark Twain</label>
+				</div>
+
+				<!-- Fråga 4 -->
+				<div class="question">
+					<p>Fråga 4: Vad är Japans huvudstad?</p>
+					<label><input type="radio" name="q4"> Beijing</label>
+					<label><input type="radio" name="q4" value="TRUE"> Tokyo</label>
+					<label><input type="radio" name="q4"> Seoul</label>
+					<label><input type="radio" name="q4"> Bangkok</label>
+				</div>
+
+				<!-- Fråga 5 -->
+				<div class="question">
+					<p>Fråga 5: Vem målade Mona Lisa?</p>
+					<label><input type="radio" name="q5" value="TRUE"> Leonardo da Vinci</label>
+					<label><input type="radio" name="q5"> Vincent van Gogh</label>
+					<label><input type="radio" name="q5"> Pablo Picasso</label>
+					<label><input type="radio" name="q5"> Claude Monet</label>
+				</div>
+
+				<!-- Fråga 6 -->
+				<div class="question">
+					<p>Fråga 6: Vilket är det största djuret på jorden?</p>
+					<label><input type="radio" name="q6"> Afrikansk elefant</label>
+					<label><input type="radio" name="q6"> Giraff</label>
+					<label><input type="radio" name="q6"> Isbjörn</label>
+					<label><input type="radio" name="q6" value="TRUE"> Blåval</label>
+				</div>
+
+				<!-- Fråga 7 -->
+				<div class="question">
+					<p>Fråga 7: Vilket år sjönk Titanic?</p>
+					<label><input type="radio" name="q7"> 1905</label><label>
+					<input type="radio" name="q7" value="TRUE"> 1912</label>
+					<label><input type="radio" name="q7"> 1925</label>
+					<label><input type="radio" name="q7"> 1937</label>
+				</div>
+
+				<!-- Fråga 8 -->
+				<div class="question">
+					<p>Fråga 8: Vad är valutan i Australien?</p>
+					<label><input type="radio" name="q8"> Euro</label>
+					<label><input type="radio" name="q8"> SEK</label>
+					<label><input type="radio" name="q8"> Yen</label>
+					<label><input type="radio" name="q8" value="TRUE"> Australian Dollar</label>
+				</div>
+			</div>
+			<button id="submit-button" onclick="checkAnswers()">Rätta</button>
+		</div>
+
+		<div class="footer">
+			Kontakta oss: infohallbar@mail.com
+		</div>
 	</div>
-	<div class="content">
-		<h1>Quiz</h1>
-	</div>
+
+	<script src="scripts.js"></script>
 </body>
 
 </html>

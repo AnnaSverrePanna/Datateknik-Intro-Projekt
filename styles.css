@@ -1,8 +1,14 @@
-/* Basic styles for your website */
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+}
+
+.page-container {
+	position: relative;
+	min-height: 100vh; /*So that the footer can be at the bottom at all times*/
+	display: flex;
+	flex-direction: column;
 }
 
 .navbar {
@@ -25,6 +31,51 @@ body {
 }
 
 .content {
+	flex: 1; /*If there is a small amount of content this make sure that the foter is at the bottom*/
 	width: 80%;
 	margin: auto;
+	overflow-y: auto; /*Enable scroll when there is a lot of content*/
+}
+
+.next-page-link {
+	text-decoration: none;
+}
+
+.footer {
+	width: 100%;
+	overflow: hidden;
+	background-color: #333;
+	color: white;
+	height: 3rem;
+	display: flex;
+	align-items: center; /*Aligns the text center vertically*/
+	justify-content: center; /*Aligns the text center horisontally*/
+}
+
+/*QUIZ*/
+.questions-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.question {
+	display: flex;
+	flex-direction: column;
+}
+
+#submit-button {
+	background-color: lightgrey;
+	border: none;
+	border-radius: 0.5em;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#submit-button:hover {
+	background-color: green;
+	color: white;
+	border: none;
+	border-radius: 0.5em;
+	margin-top: 20px;
+	padding: 10px;
 }
