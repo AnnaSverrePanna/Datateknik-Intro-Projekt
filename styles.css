@@ -12,7 +12,6 @@ body {
 }
 
 .navbar {
-	background-color: #333;
 	overflow: hidden;
 }
 
@@ -30,11 +29,23 @@ body {
 	color: black;
 }
 
+/*Sets background on navbar and footer*/
+.background-image {
+	background-image: url("backgroundImage.avif");
+	background-size: cover;
+	background-position: center;
+}
+
 .content {
 	flex: 1; /*If there is a small amount of content this make sure that the foter is at the bottom*/
 	width: 80%;
 	margin: auto;
 	overflow-y: auto; /*Enable scroll when there is a lot of content*/
+}
+
+.subject-image {
+	height: 200px;
+	margin-left: 20px;
 }
 
 .next-page-link {
