@@ -2,11 +2,13 @@
 <html>
 
 <head>
+	<!--Link to styles file-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
 	<div class="page-container">
+		<!--Navbar-->
 		<div class="navbar background-image">
 			<a href="index.html">Startsida</a>
 			<a href="subject1.html">Ämne 1</a>
@@ -16,11 +18,12 @@
 			<a href="quiz.html">Quiz</a>
 		</div>
 
+		<!--Content-->
 		<div class="content">
 			<h1>Quiz</h1>
 
 			<div class="questions-container">
-				<!-- Fråga 1 -->
+				<!-- Question 1 -->
 				<div class="question">
 					<p>Fråga 1: För vem avser FN att målen för god hälsa och välbefinnande ska inkludera?</p>
 					<label><input type="radio" name="q1"> Alla populationer lika fördelade.</label>
@@ -29,7 +32,7 @@
 					<label><input type="radio" name="q1"> Alla länder som har ekonomiska förutsättningar för att uppfylla målen.</label>
 				</div>
 
-				<!-- Fråga 2 -->
+				<!-- Question 2 -->
 				<div class="question">
 					<p>Fråga 2: Vad för typ av avfall skickas ofta från rikare länder till u-länder som riskerar fara för miljön?</p>
 					<label><input type="radio" name="q2"> Textil</label>
@@ -38,7 +41,7 @@
 					<label><input type="radio" name="q2" value="TRUE"> Elavfall</label>
 				</div>
 
-				<!-- Fråga 3 -->
+				<!-- Question 3 -->
 				<div class="question">
 					<p>Fråga 3: Vilken är den största fördelen med att använda hållbar energi?</p>
 					<label><input type="radio" name="q3"> Lägre underhållskostnader för utrustning</label>
@@ -47,7 +50,7 @@
 					<label><input type="radio" name="q3"> Enklare installation jämfört med traditionella energikällor</label>
 				</div>
 
-				<!-- Fråga 4 -->
+				<!-- Question 4 -->
 				<div class="question">
 					<p>Fråga 4: Alla länder som har ekonomiska förutsättningar för att uppfylla målen.</p>
 					<label><input type="radio" name="q4"> I utvecklingsländer är behovet lika stort som i utvecklade länder.</label>
@@ -58,7 +61,7 @@
 					lönetryck i utvecklade länder.</label>
 				</div>
 
-				<!-- Fråga 5 -->
+				<!-- Question 5 -->
 				<div class="question">
 					<p>Fråga 5: Ungefär hur mycket ökade det globala fotavtrycket från 2010 till 2017?</p>
 					<label><input type="radio" name="q5" value="TRUE"> 13</label>
@@ -67,7 +70,7 @@
 					<label><input type="radio" name="q5"> 30 miljarder ton</label>
 				</div>
 
-				<!-- Fråga 6 -->
+				<!-- Question 6 -->
 				<div class="question">
 					<p>Fråga 6: Hur många miljoner människor världen över kan idag varken läsa eller skriva?</p>
 					<label><input type="radio" name="q6"  value="TRUE"> 774</label>
@@ -76,7 +79,7 @@
 					<label><input type="radio" name="q6"> 133</label>
 				</div>
 
-				<!-- Fråga 7 -->
+				<!-- Question 7 -->
 				<div class="question">
 					<p>Fråga 7: Vilka är några av de utmaningar som är associerade med hållbar energi?</p>
 					<label><input type="radio" name="q7"> Låg efterfrågan på förnybar energi</label>
@@ -85,7 +88,7 @@
 					<label><input type="radio" name="q7"> Svårigheter med att hitta användningsområden för förnybar energi</label>
 				</div>
 
-				<!-- Fråga 8 -->
+				<!-- Question 8 -->
 				<div class="question">
 					<p>Fråga 8: Varför gjorde Covid-19 att framstegen av utbildning i utvecklingsländerna stannade?</p>
 					<label><input type="radio" name="q8"> För att lärarna blev sjuka.</label>
@@ -94,14 +97,18 @@
 					<label><input type="radio" name="q8" value="TRUE"> Eftersom skolor världen över stängde ner under pandemin.</label>
 				</div>
 			</div>
+
+			<!--Button to submit answers on quiz-->
 			<button id="submit-button" onclick="checkAnswers()">Rätta</button>
 		</div>
 
+		<!--Footer-->
 		<div class="footer background-image">
 			Kontakta oss: infohallbar@mail.com
 		</div>
 	</div>
 
+	<!--Link to script file-->
 	<script src="scripts.js"></script>
 </body>
 
