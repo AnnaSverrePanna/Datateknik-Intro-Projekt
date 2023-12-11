@@ -1,3 +1,4 @@
+/*Tags*/
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -12,16 +13,19 @@ h1 {
 	font-size: 2.5em;
 }
 
+label {
+	font-size: 1.2em;
+}
+
+
+/*Classes*/
 .page-container {
-	position: relative;
 	min-height: 100vh; /*So that the footer can be at the bottom at all times*/
 	display: flex;
 	flex-direction: column;
+	
 }
 
-.navbar {
-	overflow: hidden;
-}
 
 .navbar a {
 	float: left;
@@ -37,21 +41,20 @@ h1 {
 	color: black;
 }
 
-/*Sets background on navbar and footer*/
-.background-image {
+.background-image { /*Sets background on navbar and footer*/
 	background-image: url("backgroundImage.avif");
 	background-size: cover;
 	background-position: center;
 }
 
 .content {
-	flex: 1; /*If there is a small amount of content this make sure that the foter is at the bottom*/
+	flex: 1; /*If there is a small amount of content this make sure that the footer is at the bottom*/
 	width: 80%;
 	margin: auto;
-	overflow-y: auto; /*Enable scroll when there is a lot of content*/
+	padding-bottom: 64px;
 }
 
-.subject-image {
+.subject-image { /*The image on each page*/
 	height: 200px;
 	margin-left: 20px;
 }
@@ -59,11 +62,19 @@ h1 {
 .next-page-link {
 	text-decoration: none;
 	font-size: 1.2em;
+	padding: 10px;
+	background-color: lightgreen;
+	color: black;
+	border-radius: 0.5em;
+}
+
+.next-page-link:hover {
+	background-color: darkgreen;
+	color: white;
 }
 
 .footer {
 	width: 100%;
-	overflow: hidden;
 	background-color: #333;
 	color: darkgreen;
 	font-weight: bold;
@@ -86,18 +97,17 @@ h1 {
 }
 
 #submit-button {
-	background-color: lightgrey;
+	background-color: lightgreen;
+	color: black;
+	font-size: 1.2em;
 	border: none;
 	border-radius: 0.5em;
 	margin-top: 20px;
 	padding: 10px;
+	margin-bottom: 20px;
 }
 
 #submit-button:hover {
-	background-color: green;
+	background-color: darkgreen;
 	color: white;
-	border: none;
-	border-radius: 0.5em;
-	margin-top: 20px;
-	padding: 10px;
 }
